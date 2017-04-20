@@ -1,62 +1,112 @@
 <!DOCTYPE html>
-<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
-<html lang="en-us">
-
-<head>
-<meta charset="utf-8">
-<title>Hello...</title>
-<style type="text/css">
-#mainContent {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	font-weight: bold;
-	background-color: #E3F0FB;
-	border-radius: 4px;
-	padding: 10px;
-	text-align: center;
-}
-.buttonStyle {
-	border-radius: 4px;
-	border: thin solid #F0E020;
-	padding: 5px;
-	background-color: #F8F094;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: #663300;
-	width: 75px;
-}
-
-.buttonStyle:hover {
-	border: thin solid #FFCC00;
-	background-color: #FCF9D6;
-	color: #996633;
-	cursor: pointer;
-}
-.buttonStyle:active {
-	border: thin solid #99CC00;
-	background-color: #F5FFD2;
-	color: #669900;
-	cursor: pointer;
-}
-
-</style>
-</head>
-
-<body>
-<div id="mainContent">
-<p id="helloText">?</p>
-<button id="clickButton" class="buttonStyle">click me</button>
-</div>
-<script> 
-var myButton = document.getElementById("clickButton");
-var myText = document.getElementById("helloText");
-
-myButton.addEventListener('click', doSomething, false)
-
-function doSomething() {
-	myText.textContent = "hello, world!";
-}
-</script>
-
-</body>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tech★academy ★KITCHEN</title>
+        <link rel="stylesheet" href="kitchen.css">
+    </head>
+    <body>
+        <!-- ここからヘッダーだよ -->
+        <header>
+            <h1>
+                <a href="/kitchen.html"><img src="img/logo.png" alt="テックアカデミー★キッチン"></a>
+            </h1>
+        </header>
+        
+        <nav id="global_navi">
+            <ul>
+                <li class="current"><a href="kitchen.html">HOME</a></li>
+                <li><a href="course.html">講座案内</a></li>
+                <li><a href="lesson.html">れっすんすん</a></li>
+                <li><a href="gallery.html">すーごーい！！</a></li>
+                <li><a href="access.html">たーのしー！！</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <!-- ヘッダーここまで -->
+        
+        <!-- ここからメイン画像 -->
+        <div id="main_visual">
+            <p><img src="img/main_visual.jpg" alt="健やかな健康と豊かな食生活をはじめる"></p>
+        </div>
+        <!-- メイン画像ここまで -->
+            
+        <!-- wrapperここから -->
+        <div id="wrapper">
+            <!--ここからメイン-->
+            <div id="main">
+                <section id="point">
+                    <img src="git-logo.png" alt="git logo">
+                    <h2>テックアカデミー★キッチンについて</h2>
+                    <section>
+                        <h3>お料理したいフレンズなんだね！</h3>
+                        <figure>
+                            <img src="img/photo01.jpg" alt="TechAcademy KITCHENについて1">
+                            <figcaption>うまうまー</figcaption>
+                        </figure>
+                        <p>
+                            健やかな人生は健やかな食生活から<br>
+                            上手に料理が作れるだけでなく、食べる人の人生をも健やかにしていきたい。<br>
+                            それが、TechAcademy KITCHENの思いです。
+                        </p>
+                    </section>
+                    <section>
+                        <h3>豊かな食生活を応援したい</h3>
+                        <figure>
+                            <img src="img/photo02.jpg" alt="TechAcademy KITCHENについて2">
+                            <figcaption>完成間近の作品</figcaption>
+                        </figure>
+                        <p>
+                            食は文化の数だけあります。<br>
+                            食生活が豊かだと、人生をも豊かになります。 <br>
+                            多彩なカテゴリの料理を提供し、料理をする人、食べる人の生活も豊かにしていきたいと思っております。
+                        </p>
+                    </section>
+                </section>
+ 
+                <section id="news">
+                    <h2>お知らせ</h2>
+                    <dl>
+                        <dt>2016/09/01</dt>
+                        <dd><a href="course.html">講座案内を更新しました</a></dd>
+                        <dt>2016/08/31</dt>
+                        <dd><a href="gallery.html">写真を追加しました</a></dd>
+                        <dt>2016/08/24</dt>
+                        <dd><a href="course.html">講座案内を更新しました</a></dd>
+                    </dl>
+                </section>
+            </div>  
+            <!--ここからサイド-->
+            <aside id="sidebar">
+                <section id="side_banner">
+                    <h2>関連リンク</h2>
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank"><img src="img/banner01.jpg" alt="ブログ"></a>
+                            <p>毎日季節の野菜を取り入れたレシピを公開中。</p>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+            <!--サイドここまで-->
+        </div>
+        <!--wrapperここまで-->
+        
+        <!--ここからフッター-->
+        <footer>
+            <div id="footer_nav">
+                <ul>
+                    <li><a href="kitchen.html">HOME</a></li>
+                    <li><a href="course.html">講座案内</a></li>
+                    <li><a href="gallery.html">ギャラリー</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="policy.html">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+            <small>&copy; 2016 TechAcademy KITCHEN.</small>
+        </footer>
+        <!--フッターここまで-->
+        
+    </body>
 </html>
